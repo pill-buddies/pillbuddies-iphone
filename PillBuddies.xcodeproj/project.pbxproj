@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2111437F22DBE526000323BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111437E22DBE526000323BF /* AppDelegate.swift */; };
+		2111438122DBE526000323BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111438022DBE526000323BF /* ViewController.swift */; };
+		2111438422DBE526000323BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2111438222DBE526000323BF /* Main.storyboard */; };
+		2111438622DBE527000323BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2111438522DBE527000323BF /* Assets.xcassets */; };
+		2111438922DBE527000323BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2111438722DBE527000323BF /* LaunchScreen.storyboard */; };
+		2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111439322DBE527000323BF /* PillBuddiesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2111439022DBE527000323BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2111437322DBE526000323BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2111437A22DBE526000323BF;
+			remoteInfo = PillBuddies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2111437B22DBE526000323BF /* PillBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2111437E22DBE526000323BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2111438022DBE526000323BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2111438322DBE526000323BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2111438522DBE527000323BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2111438822DBE527000323BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2111438A22DBE527000323BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2111438F22DBE527000323BF /* PillBuddiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillBuddiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2111439322DBE527000323BF /* PillBuddiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillBuddiesTests.swift; sourceTree = "<group>"; };
+		2111439522DBE527000323BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2111437822DBE526000323BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2111438C22DBE527000323BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2111437222DBE526000323BF = {
+			isa = PBXGroup;
+			children = (
+				2111437D22DBE526000323BF /* PillBuddies */,
+				2111439222DBE527000323BF /* PillBuddiesTests */,
+				2111437C22DBE526000323BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2111437C22DBE526000323BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2111437B22DBE526000323BF /* PillBuddies.app */,
+				2111438F22DBE527000323BF /* PillBuddiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2111437D22DBE526000323BF /* PillBuddies */ = {
+			isa = PBXGroup;
+			children = (
+				2111437E22DBE526000323BF /* AppDelegate.swift */,
+				2111438022DBE526000323BF /* ViewController.swift */,
+				2111438222DBE526000323BF /* Main.storyboard */,
+				2111438522DBE527000323BF /* Assets.xcassets */,
+				2111438722DBE527000323BF /* LaunchScreen.storyboard */,
+				2111438A22DBE527000323BF /* Info.plist */,
+			);
+			path = PillBuddies;
+			sourceTree = "<group>";
+		};
+		2111439222DBE527000323BF /* PillBuddiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				2111439322DBE527000323BF /* PillBuddiesTests.swift */,
+				2111439522DBE527000323BF /* Info.plist */,
+			);
+			path = PillBuddiesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2111437A22DBE526000323BF /* PillBuddies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2111439822DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddies" */;
+			buildPhases = (
+				2111437722DBE526000323BF /* Sources */,
+				2111437822DBE526000323BF /* Frameworks */,
+				2111437922DBE526000323BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PillBuddies;
+			productName = PillBuddies;
+			productReference = 2111437B22DBE526000323BF /* PillBuddies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2111438E22DBE527000323BF /* PillBuddiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2111439B22DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddiesTests" */;
+			buildPhases = (
+				2111438B22DBE527000323BF /* Sources */,
+				2111438C22DBE527000323BF /* Frameworks */,
+				2111438D22DBE527000323BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2111439122DBE527000323BF /* PBXTargetDependency */,
+			);
+			name = PillBuddiesTests;
+			productName = PillBuddiesTests;
+			productReference = 2111438F22DBE527000323BF /* PillBuddiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2111437322DBE526000323BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Pill Buddies";
+				TargetAttributes = {
+					2111437A22DBE526000323BF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2111438E22DBE527000323BF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2111437A22DBE526000323BF;
+					};
+				};
+			};
+			buildConfigurationList = 2111437622DBE526000323BF /* Build configuration list for PBXProject "PillBuddies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2111437222DBE526000323BF;
+			productRefGroup = 2111437C22DBE526000323BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2111437A22DBE526000323BF /* PillBuddies */,
+				2111438E22DBE527000323BF /* PillBuddiesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2111437922DBE526000323BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2111438922DBE527000323BF /* LaunchScreen.storyboard in Resources */,
+				2111438622DBE527000323BF /* Assets.xcassets in Resources */,
+				2111438422DBE526000323BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2111438D22DBE527000323BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2111437722DBE526000323BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2111438122DBE526000323BF /* ViewController.swift in Sources */,
+				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2111438B22DBE527000323BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2111439122DBE527000323BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2111437A22DBE526000323BF /* PillBuddies */;
+			targetProxy = 2111439022DBE527000323BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2111438222DBE526000323BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2111438322DBE526000323BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2111438722DBE527000323BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2111438822DBE527000323BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2111439622DBE527000323BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2111439722DBE527000323BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2111439922DBE527000323BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6G37G32MJ;
+				INFOPLIST_FILE = PillBuddies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2111439A22DBE527000323BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6G37G32MJ;
+				INFOPLIST_FILE = PillBuddies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2111439C22DBE527000323BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6G37G32MJ;
+				INFOPLIST_FILE = PillBuddiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PillBuddies.app/PillBuddies";
+			};
+			name = Debug;
+		};
+		2111439D22DBE527000323BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6G37G32MJ;
+				INFOPLIST_FILE = PillBuddiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PillBuddies.app/PillBuddies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2111437622DBE526000323BF /* Build configuration list for PBXProject "PillBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2111439622DBE527000323BF /* Debug */,
+				2111439722DBE527000323BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2111439822DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2111439922DBE527000323BF /* Debug */,
+				2111439A22DBE527000323BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2111439B22DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2111439C22DBE527000323BF /* Debug */,
+				2111439D22DBE527000323BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2111437322DBE526000323BF /* Project object */;
+}
