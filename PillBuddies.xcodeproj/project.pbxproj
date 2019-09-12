@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2111437F22DBE526000323BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111437E22DBE526000323BF /* AppDelegate.swift */; };
-		2111438122DBE526000323BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111438022DBE526000323BF /* ViewController.swift */; };
+		2111438122DBE526000323BF /* MedicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111438022DBE526000323BF /* MedicationController.swift */; };
 		2111438422DBE526000323BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2111438222DBE526000323BF /* Main.storyboard */; };
 		2111438622DBE527000323BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2111438522DBE527000323BF /* Assets.xcassets */; };
-		2111438922DBE527000323BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2111438722DBE527000323BF /* LaunchScreen.storyboard */; };
 		2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111439322DBE527000323BF /* PillBuddiesTests.swift */; };
+		EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */; };
+		EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */; };
+		EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		2111437B22DBE526000323BF /* PillBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2111437E22DBE526000323BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2111438022DBE526000323BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2111438022DBE526000323BF /* MedicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationController.swift; sourceTree = "<group>"; };
 		2111438322DBE526000323BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2111438522DBE527000323BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2111438822DBE527000323BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2111438A22DBE527000323BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2111438F22DBE527000323BF /* PillBuddiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillBuddiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2111439322DBE527000323BF /* PillBuddiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillBuddiesTests.swift; sourceTree = "<group>"; };
 		2111439522DBE527000323BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				2111437E22DBE526000323BF /* AppDelegate.swift */,
-				2111438022DBE526000323BF /* ViewController.swift */,
+				2111438022DBE526000323BF /* MedicationController.swift */,
+				EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */,
 				2111438222DBE526000323BF /* Main.storyboard */,
 				2111438522DBE527000323BF /* Assets.xcassets */,
-				2111438722DBE527000323BF /* LaunchScreen.storyboard */,
 				2111438A22DBE527000323BF /* Info.plist */,
+				EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */,
+				EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */,
 			);
 			path = PillBuddies;
 			sourceTree = "<group>";
@@ -177,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2111438922DBE527000323BF /* LaunchScreen.storyboard in Resources */,
 				2111438622DBE527000323BF /* Assets.xcassets in Resources */,
 				2111438422DBE526000323BF /* Main.storyboard in Resources */,
 			);
@@ -197,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2111438122DBE526000323BF /* ViewController.swift in Sources */,
+				EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */,
+				EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */,
+				2111438122DBE526000323BF /* MedicationController.swift in Sources */,
+				EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */,
 				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +235,6 @@
 				2111438322DBE526000323BF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2111438722DBE527000323BF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2111438822DBE527000323BF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
