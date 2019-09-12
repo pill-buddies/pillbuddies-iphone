@@ -15,6 +15,10 @@
 		EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */; };
 		EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */; };
 		EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */; };
+		EC6D0ECF232A7E1D00EC4DDE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */; };
+		EC6D0ED0232A7F1B00EC4DDE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */; };
+		EC6D0ED2232A82EB00EC4DDE /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ED1232A82EB00EC4DDE /* NavBarController.swift */; };
+		EC6D0ED4232A835000EC4DDE /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ED3232A835000EC4DDE /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,9 @@
 		EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EC6D0ED1232A82EB00EC4DDE /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		EC6D0ED3232A835000EC4DDE /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				2111437E22DBE526000323BF /* AppDelegate.swift */,
+				EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */,
 				2111438022DBE526000323BF /* MedicationController.swift */,
 				EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */,
 				2111438222DBE526000323BF /* Main.storyboard */,
+				EC6D0ED3232A835000EC4DDE /* NavBar.swift */,
+				EC6D0ED1232A82EB00EC4DDE /* NavBarController.swift */,
 				2111438522DBE527000323BF /* Assets.xcassets */,
 				2111438A22DBE527000323BF /* Info.plist */,
 				EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */,
@@ -203,7 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */,
+				EC6D0ED4232A835000EC4DDE /* NavBar.swift in Sources */,
+				EC6D0ECF232A7E1D00EC4DDE /* Extensions.swift in Sources */,
 				EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */,
+				EC6D0ED2232A82EB00EC4DDE /* NavBarController.swift in Sources */,
 				2111438122DBE526000323BF /* MedicationController.swift in Sources */,
 				EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */,
 				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,
@@ -215,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */,
+				EC6D0ED0232A7F1B00EC4DDE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
