@@ -27,28 +27,28 @@ class TabBarController: UITabBarController {
     }
     
     func setUpNavBar() {
-        let frame = CGRect(x: 0.0, y: 0.0, width: 80.0, height: 25.0)
-        let logoTextView = UILabel.init(frame: frame)
-        logoTextView.textAlignment = NSTextAlignment.left
-
+        let button  = UIButton(type: .custom)
         let normalText  = "Pill"
         let normalFont = UIFont(name: "Roboto-Medium", size: 22)
-        let normalAttributes = [NSAttributedString.Key.font: normalFont]
+        let normalAttributes = [NSAttributedString.Key.font: normalFont, NSAttributedString.Key.foregroundColor: UIColor.white]
         let attributedString = NSMutableAttributedString(string: normalText, attributes: normalAttributes as [NSAttributedString.Key : Any])
         let lightText = "Pals"
         let lightFont = UIFont(name: "Roboto-Light", size: 22)
-        let lightAttributes = [NSAttributedString.Key.font: lightFont]
+        let lightAttributes = [NSAttributedString.Key.font: lightFont, NSAttributedString.Key.foregroundColor: UIColor.white]
         let lightString = NSMutableAttributedString(string: lightText, attributes: lightAttributes as [NSAttributedString.Key : Any])
         attributedString.append(lightString)
-
-        logoTextView.attributedText = attributedString
-        logoTextView.textColor = .white
-        let logoItem = UIBarButtonItem.init(customView: logoTextView)
-        let widthConstraint = logoTextView.widthAnchor.constraint(equalToConstant: 80)
-        let heightConstraint = logoTextView.heightAnchor.constraint(equalToConstant: 25)
+        button.setAttributedTitle(attributedString, for: .normal)
+        button.addTarget(self, action: #selector(logoItemAction), for: .touchUpInside)
+        let logoItem = UIBarButtonItem.init(customView: button)
+        let widthConstraint = button.widthAnchor.constraint(equalToConstant: 80)
+        let heightConstraint = button.heightAnchor.constraint(equalToConstant: 25)
         heightConstraint.isActive = true
         widthConstraint.isActive = true
-        navigationItem.leftBarButtonItem =  logoItem
+        navigationItem.leftBarButtonItem = logoItem
+    }
+    
+    @objc func logoItemAction(sender: UIButton!) {
+        selectedIndex = 1 // Center index
     }
 
     @objc func dashButtonAction(sender: UIButton!) {
