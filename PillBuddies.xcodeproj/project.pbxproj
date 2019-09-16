@@ -30,6 +30,7 @@
 		EC6D0EFA232C1CE200EC4DDE /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */; };
 		EC6D0EFB232C1CE200EC4DDE /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EE8232C19D500EC4DDE /* Roboto-Thin.ttf */; };
 		EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEA232C19D500EC4DDE /* Roboto-ThinItalic.ttf */; };
+		EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EC6D0EED232C19D500EC4DDE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EC6D0EEE232C19D500EC4DDE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				2111438A22DBE527000323BF /* Info.plist */,
 				EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */,
 				EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */,
+				EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */,
 				EC6D0EE3232C19CD00EC4DDE /* fonts */,
 			);
 			path = PillBuddies;
@@ -271,6 +274,7 @@
 				EC6D0ECF232A7E1D00EC4DDE /* Extensions.swift in Sources */,
 				EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */,
 				EC6D0ED2232A82EB00EC4DDE /* NavBarController.swift in Sources */,
+				EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */,
 				2111438122DBE526000323BF /* MedicationController.swift in Sources */,
 				EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */,
 				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,

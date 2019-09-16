@@ -1,5 +1,5 @@
 //
-//  NavBar.swift
+//  LogoItem.swift
 //  PillBuddies
 //
 //  Created by William Harvey on 2019-09-16.
@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-class NavBar: UINavigationBar {
-    func changeBrandDisplay() {
-        self.
-    }
+class LogoItem: UIBarButtonItem {
+    
 }

@@ -23,32 +23,7 @@ class TabBarController: UITabBarController {
         // dashButton.setImage(image, for: .normal)
         dashButton.addTarget(self, action: #selector(dashButtonAction), for: .touchUpInside)
         self.view.insertSubview(dashButton, aboveSubview: self.tabBar)
-        setUpNavBar()
-    }
-    
-    func setUpNavBar() {
-        let button  = UIButton(type: .custom)
-        let normalText  = "Pill"
-        let normalFont = UIFont(name: "Roboto-Medium", size: 22)
-        let normalAttributes = [NSAttributedString.Key.font: normalFont, NSAttributedString.Key.foregroundColor: UIColor.white]
-        let attributedString = NSMutableAttributedString(string: normalText, attributes: normalAttributes as [NSAttributedString.Key : Any])
-        let lightText = "Pals"
-        let lightFont = UIFont(name: "Roboto-Light", size: 22)
-        let lightAttributes = [NSAttributedString.Key.font: lightFont, NSAttributedString.Key.foregroundColor: UIColor.white]
-        let lightString = NSMutableAttributedString(string: lightText, attributes: lightAttributes as [NSAttributedString.Key : Any])
-        attributedString.append(lightString)
-        button.setAttributedTitle(attributedString, for: .normal)
-        button.addTarget(self, action: #selector(logoItemAction), for: .touchUpInside)
-        let logoItem = UIBarButtonItem.init(customView: button)
-        let widthConstraint = button.widthAnchor.constraint(equalToConstant: 80)
-        let heightConstraint = button.heightAnchor.constraint(equalToConstant: 25)
-        heightConstraint.isActive = true
-        widthConstraint.isActive = true
-        navigationItem.leftBarButtonItem = logoItem
-    }
-    
-    @objc func logoItemAction(sender: UIButton!) {
-        selectedIndex = 1 // Center index
+        
     }
 
     @objc func dashButtonAction(sender: UIButton!) {
@@ -57,8 +32,22 @@ class TabBarController: UITabBarController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
+        let inset = getInset()
+        
+        dashButton.frame = CGRect.init(x: self.tabBar.center.x - 32, y: self.view.bounds.height - 64 - inset, width: 64, height: 64)
+    }
 
-        dashButton.frame = CGRect.init(x: self.tabBar.center.x - 32, y: self.view.bounds.height - 64 - 32, width: 64, height: 64)
+    func getInset() -> CGFloat {
+        switch UIScreen.main.scale {
+        case 1,
+             2:
+            return 16
+        case 3:
+            return 48
+        default:
+            return 48
+        }
     }
     
     override func didReceiveMemoryWarning() {
