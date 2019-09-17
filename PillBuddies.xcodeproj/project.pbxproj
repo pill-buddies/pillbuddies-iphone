@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		2111438422DBE526000323BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2111438222DBE526000323BF /* Main.storyboard */; };
 		2111438622DBE527000323BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2111438522DBE527000323BF /* Assets.xcassets */; };
 		2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111439322DBE527000323BF /* PillBuddiesTests.swift */; };
+		65CFFC8857797EB067948457 /* Pods_PillBuddiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */; };
+		83C78960E2F0448C0344A061 /* Pods_PillBuddies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */; };
 		EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */; };
 		EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */; };
 		EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */; };
@@ -31,6 +33,7 @@
 		EC6D0EFB232C1CE200EC4DDE /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EE8232C19D500EC4DDE /* Roboto-Thin.ttf */; };
 		EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEA232C19D500EC4DDE /* Roboto-ThinItalic.ttf */; };
 		EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */; };
+		ECCFD55523316A36007A6A64 /* pill-v5.svg in Resources */ = {isa = PBXBuildFile; fileRef = ECCFD554233165CF007A6A64 /* pill-v5.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		2111438F22DBE527000323BF /* PillBuddiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PillBuddiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2111439322DBE527000323BF /* PillBuddiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillBuddiesTests.swift; sourceTree = "<group>"; };
 		2111439522DBE527000323BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillBuddies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FDDC760DF0900B8118300E /* Pods-PillBuddies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddies.debug.xcconfig"; path = "Target Support Files/Pods-PillBuddies/Pods-PillBuddies.debug.xcconfig"; sourceTree = "<group>"; };
+		5ECDEDA76ACBD6F61465FC02 /* Pods-PillBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddies.release.xcconfig"; path = "Target Support Files/Pods-PillBuddies/Pods-PillBuddies.release.xcconfig"; sourceTree = "<group>"; };
+		98994288CA409313B7152E30 /* Pods-PillBuddiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddiesTests.debug.xcconfig"; path = "Target Support Files/Pods-PillBuddiesTests/Pods-PillBuddiesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillBuddiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
@@ -71,6 +79,8 @@
 		EC6D0EEE232C19D500EC4DDE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
 		EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		ECCFD554233165CF007A6A64 /* pill-v5.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pill-v5.svg"; sourceTree = "<group>"; };
+		F53197B993DE2E230D426368 /* Pods-PillBuddiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddiesTests.release.xcconfig"; path = "Target Support Files/Pods-PillBuddiesTests/Pods-PillBuddiesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C78960E2F0448C0344A061 /* Pods_PillBuddies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CFFC8857797EB067948457 /* Pods_PillBuddiesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +109,8 @@
 				2111437D22DBE526000323BF /* PillBuddies */,
 				2111439222DBE527000323BF /* PillBuddiesTests */,
 				2111437C22DBE526000323BF /* Products */,
+				EA437A8FA47D8282CC29AF35 /* Pods */,
+				9A495013475BD6475003BD44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +126,7 @@
 		2111437D22DBE526000323BF /* PillBuddies */ = {
 			isa = PBXGroup;
 			children = (
+				ECCFD55623316A4B007A6A64 /* SVGAssets */,
 				2111437E22DBE526000323BF /* AppDelegate.swift */,
 				EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */,
 				2111438022DBE526000323BF /* MedicationController.swift */,
@@ -137,6 +152,26 @@
 			path = PillBuddiesTests;
 			sourceTree = "<group>";
 		};
+		9A495013475BD6475003BD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */,
+				D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA437A8FA47D8282CC29AF35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54FDDC760DF0900B8118300E /* Pods-PillBuddies.debug.xcconfig */,
+				5ECDEDA76ACBD6F61465FC02 /* Pods-PillBuddies.release.xcconfig */,
+				98994288CA409313B7152E30 /* Pods-PillBuddiesTests.debug.xcconfig */,
+				F53197B993DE2E230D426368 /* Pods-PillBuddiesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EC6D0EE3232C19CD00EC4DDE /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +191,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		ECCFD55623316A4B007A6A64 /* SVGAssets */ = {
+			isa = PBXGroup;
+			children = (
+				ECCFD554233165CF007A6A64 /* pill-v5.svg */,
+			);
+			path = SVGAssets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2111439822DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddies" */;
 			buildPhases = (
+				1F2FE40A6931B890FAE6EC17 /* [CP] Check Pods Manifest.lock */,
 				2111437722DBE526000323BF /* Sources */,
 				2111437822DBE526000323BF /* Frameworks */,
 				2111437922DBE526000323BF /* Resources */,
+				FAEFA1F4E4FE4C3C1E1E1889 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2111439B22DBE527000323BF /* Build configuration list for PBXNativeTarget "PillBuddiesTests" */;
 			buildPhases = (
+				B571D7093279BADAF88296F5 /* [CP] Check Pods Manifest.lock */,
 				2111438B22DBE527000323BF /* Sources */,
 				2111438C22DBE527000323BF /* Frameworks */,
 				2111438D22DBE527000323BF /* Resources */,
@@ -244,6 +290,7 @@
 				2111438622DBE527000323BF /* Assets.xcassets in Resources */,
 				EC6D0EF6232C1CE200EC4DDE /* Roboto-LightItalic.ttf in Resources */,
 				2111438422DBE526000323BF /* Main.storyboard in Resources */,
+				ECCFD55523316A36007A6A64 /* pill-v5.svg in Resources */,
 				EC6D0EF3232C1CE200EC4DDE /* Roboto-BlackItalic.ttf in Resources */,
 				EC6D0EF5232C1CE200EC4DDE /* Roboto-Light.ttf in Resources */,
 				EC6D0EF8232C1CE200EC4DDE /* Roboto-MediumItalic.ttf in Resources */,
@@ -264,6 +311,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F2FE40A6931B890FAE6EC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PillBuddies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B571D7093279BADAF88296F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PillBuddiesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEFA1F4E4FE4C3C1E1E1889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PillBuddies/Pods-PillBuddies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PillBuddies/Pods-PillBuddies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PillBuddies/Pods-PillBuddies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2111437722DBE526000323BF /* Sources */ = {
@@ -430,8 +541,10 @@
 		};
 		2111439922DBE527000323BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54FDDC760DF0900B8118300E /* Pods-PillBuddies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B6G37G32MJ;
 				INFOPLIST_FILE = PillBuddies/Info.plist;
@@ -441,6 +554,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PillBuddies/PillBuddies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,8 +563,10 @@
 		};
 		2111439A22DBE527000323BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECDEDA76ACBD6F61465FC02 /* Pods-PillBuddies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B6G37G32MJ;
 				INFOPLIST_FILE = PillBuddies/Info.plist;
@@ -459,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PillBuddies/PillBuddies-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +584,7 @@
 		};
 		2111439C22DBE527000323BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98994288CA409313B7152E30 /* Pods-PillBuddiesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +606,7 @@
 		};
 		2111439D22DBE527000323BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53197B993DE2E230D426368 /* Pods-PillBuddiesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

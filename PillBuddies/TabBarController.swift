@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVGKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
     @IBInspectable var defaultIndex: Int = 0
@@ -14,7 +15,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     let dashButton = UIButton.init(type: .custom)
     let selectedColor = UIColor(hexString: "#FF7F00")
     let unselectedColor = UIColor(hexString: "#28275A")
-
+    let dashImage = "pill-v5"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -22,7 +24,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         
         dashButton.backgroundColor = UIColor(hexString: "#DADAEA")
         dashButton.layer.cornerRadius = 32
-        let image = UIImage(named: "pill-100")?.withRenderingMode(.alwaysTemplate)
+        let svgImage = SVGKImage(named: dashImage)
+        svgImage.size = CGSize(width: 38, height: 38)
+        let image = svgImage.uiImage.withRenderingMode(.alwaysTemplate)
         dashButton.setImage(image, for: .normal)
         if (defaultIndex == 1) {
             dashButton.tintColor = selectedColor

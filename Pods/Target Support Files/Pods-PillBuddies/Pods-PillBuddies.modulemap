@@ -1,0 +1,6 @@
+framework module Pods_PillBuddies {
+  umbrella header "Pods-PillBuddies-umbrella.h"
+
+  export *
+  module * { export * }
+}
