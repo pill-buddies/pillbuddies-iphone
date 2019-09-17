@@ -139,7 +139,7 @@
         <scene sceneID="Bom-iu-OZ3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="keF-TA-D3p" customClass="NavBarController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="Yau-Pr-AOM"/>
+                    <tabBarItem key="tabBarItem" title="" image="pill-100" selectedImage="pill-100" id="Yau-Pr-AOM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2Sk-q1-PZx">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -176,4 +176,7 @@
             <point key="canvasLocation" x="1734" y="733"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pill-100" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
 </document>

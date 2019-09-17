@@ -14,12 +14,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        setUpNavBar()
-    }
-    
-    func setUpNavBar() {
         setUpLeftNavBar()
-        
     }
     
     func setUpLeftNavBar() {
@@ -42,8 +37,8 @@ class BaseViewController: UIViewController {
         widthConstraint.isActive = true
         navigationItem.leftBarButtonItems = [logoItem]
     }
-    
+
     @objc func logoItemAction(sender: UIButton!) {
-        navigationController?.tabBarController?.selectedIndex = 1 // Center index
+        (navigationController?.tabBarController as! TabBarController).dashButtonAction(sender: sender)
     }
 }
