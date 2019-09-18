@@ -14,6 +14,10 @@
 		2111439422DBE527000323BF /* PillBuddiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2111439322DBE527000323BF /* PillBuddiesTests.swift */; };
 		65CFFC8857797EB067948457 /* Pods_PillBuddiesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */; };
 		83C78960E2F0448C0344A061 /* Pods_PillBuddies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */; };
+		EC245E8E2332CD7E0017A258 /* lightbulb_outline.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8A2332CD7E0017A258 /* lightbulb_outline.svg */; };
+		EC245E8F2332CD7E0017A258 /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8B2332CD7E0017A258 /* search.svg */; };
+		EC245E902332CD7E0017A258 /* format_list_bulleted.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */; };
+		EC245E912332CD7E0017A258 /* graph-v2.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8D2332CD7E0017A258 /* graph-v2.svg */; };
 		EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */; };
 		EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */; };
 		EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */; };
@@ -61,6 +65,10 @@
 		5ECDEDA76ACBD6F61465FC02 /* Pods-PillBuddies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddies.release.xcconfig"; path = "Target Support Files/Pods-PillBuddies/Pods-PillBuddies.release.xcconfig"; sourceTree = "<group>"; };
 		98994288CA409313B7152E30 /* Pods-PillBuddiesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddiesTests.debug.xcconfig"; path = "Target Support Files/Pods-PillBuddiesTests/Pods-PillBuddiesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillBuddiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC245E8A2332CD7E0017A258 /* lightbulb_outline.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lightbulb_outline.svg; sourceTree = "<group>"; };
+		EC245E8B2332CD7E0017A258 /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = search.svg; sourceTree = "<group>"; };
+		EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = format_list_bulleted.svg; sourceTree = "<group>"; };
+		EC245E8D2332CD7E0017A258 /* graph-v2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "graph-v2.svg"; sourceTree = "<group>"; };
 		EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
@@ -194,6 +202,10 @@
 		ECCFD55623316A4B007A6A64 /* SVGAssets */ = {
 			isa = PBXGroup;
 			children = (
+				EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */,
+				EC245E8D2332CD7E0017A258 /* graph-v2.svg */,
+				EC245E8A2332CD7E0017A258 /* lightbulb_outline.svg */,
+				EC245E8B2332CD7E0017A258 /* search.svg */,
 				ECCFD554233165CF007A6A64 /* pill-v5.svg */,
 			);
 			path = SVGAssets;
@@ -285,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC245E902332CD7E0017A258 /* format_list_bulleted.svg in Resources */,
 				EC6D0EF4232C1CE200EC4DDE /* Roboto-BoldItalic.ttf in Resources */,
 				EC6D0EF9232C1CE200EC4DDE /* Roboto-Regular.ttf in Resources */,
 				2111438622DBE527000323BF /* Assets.xcassets in Resources */,
@@ -292,14 +305,17 @@
 				2111438422DBE526000323BF /* Main.storyboard in Resources */,
 				ECCFD55523316A36007A6A64 /* pill-v5.svg in Resources */,
 				EC6D0EF3232C1CE200EC4DDE /* Roboto-BlackItalic.ttf in Resources */,
+				EC245E912332CD7E0017A258 /* graph-v2.svg in Resources */,
 				EC6D0EF5232C1CE200EC4DDE /* Roboto-Light.ttf in Resources */,
 				EC6D0EF8232C1CE200EC4DDE /* Roboto-MediumItalic.ttf in Resources */,
+				EC245E8F2332CD7E0017A258 /* search.svg in Resources */,
 				EC6D0EF0232C1CD800EC4DDE /* Roboto-Bold.ttf in Resources */,
 				EC6D0EF2232C1CDC00EC4DDE /* Roboto-Black.ttf in Resources */,
 				EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */,
 				EC6D0EFA232C1CE200EC4DDE /* Roboto-RegularItalic.ttf in Resources */,
 				EC6D0EFB232C1CE200EC4DDE /* Roboto-Thin.ttf in Resources */,
 				EC6D0EF7232C1CE200EC4DDE /* Roboto-Medium.ttf in Resources */,
+				EC245E8E2332CD7E0017A258 /* lightbulb_outline.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
