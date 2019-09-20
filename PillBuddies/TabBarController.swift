@@ -100,9 +100,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
              2:
             return 8
         case 3:
-            return 40
+            return 48
         default:
-            return 40
+            return 48
         }
     }
 

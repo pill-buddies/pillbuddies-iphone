@@ -18,6 +18,13 @@
 		EC245E8F2332CD7E0017A258 /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8B2332CD7E0017A258 /* search.svg */; };
 		EC245E902332CD7E0017A258 /* format_list_bulleted.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */; };
 		EC245E912332CD7E0017A258 /* graph-v2.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8D2332CD7E0017A258 /* graph-v2.svg */; };
+		EC6241162335129D00AAA0EE /* account_circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241132335129C00AAA0EE /* account_circle.svg */; };
+		EC6241172335129D00AAA0EE /* settings.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241142335129C00AAA0EE /* settings.svg */; };
+		EC6241182335129D00AAA0EE /* stars.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241152335129C00AAA0EE /* stars.svg */; };
+		EC62411A233515D300AAA0EE /* RecommendationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC624119233515D300AAA0EE /* RecommendationsController.swift */; };
+		EC62411C2335161000AAA0EE /* GraphsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62411B2335160F00AAA0EE /* GraphsController.swift */; };
+		EC62411E2335163400AAA0EE /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62411D2335163400AAA0EE /* SearchController.swift */; };
+		EC62412023351ABC00AAA0EE /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC62411F23351ABC00AAA0EE /* DismissSegue.swift */; };
 		EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */; };
 		EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */; };
 		EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */; };
@@ -69,6 +76,13 @@
 		EC245E8B2332CD7E0017A258 /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = search.svg; sourceTree = "<group>"; };
 		EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = format_list_bulleted.svg; sourceTree = "<group>"; };
 		EC245E8D2332CD7E0017A258 /* graph-v2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "graph-v2.svg"; sourceTree = "<group>"; };
+		EC6241132335129C00AAA0EE /* account_circle.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = account_circle.svg; sourceTree = "<group>"; };
+		EC6241142335129C00AAA0EE /* settings.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = settings.svg; sourceTree = "<group>"; };
+		EC6241152335129C00AAA0EE /* stars.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stars.svg; sourceTree = "<group>"; };
+		EC624119233515D300AAA0EE /* RecommendationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsController.swift; sourceTree = "<group>"; };
+		EC62411B2335160F00AAA0EE /* GraphsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsController.swift; sourceTree = "<group>"; };
+		EC62411D2335163400AAA0EE /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		EC62411F23351ABC00AAA0EE /* DismissSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
 		EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
 		EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
@@ -140,12 +154,16 @@
 				2111438022DBE526000323BF /* MedicationController.swift */,
 				EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */,
 				2111438222DBE526000323BF /* Main.storyboard */,
+				EC62411B2335160F00AAA0EE /* GraphsController.swift */,
+				EC62411D2335163400AAA0EE /* SearchController.swift */,
 				EC6D0ED1232A82EB00EC4DDE /* NavBarController.swift */,
 				2111438522DBE527000323BF /* Assets.xcassets */,
 				2111438A22DBE527000323BF /* Info.plist */,
 				EC6D0EC62329A31C00EC4DDE /* TabBarController.swift */,
+				EC624119233515D300AAA0EE /* RecommendationsController.swift */,
 				EC6D0ECC2329D23600EC4DDE /* HistoryController.swift */,
 				EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */,
+				EC62411F23351ABC00AAA0EE /* DismissSegue.swift */,
 				EC6D0EE3232C19CD00EC4DDE /* fonts */,
 			);
 			path = PillBuddies;
@@ -207,6 +225,9 @@
 				EC245E8A2332CD7E0017A258 /* lightbulb_outline.svg */,
 				EC245E8B2332CD7E0017A258 /* search.svg */,
 				ECCFD554233165CF007A6A64 /* pill-v5.svg */,
+				EC6241132335129C00AAA0EE /* account_circle.svg */,
+				EC6241142335129C00AAA0EE /* settings.svg */,
+				EC6241152335129C00AAA0EE /* stars.svg */,
 			);
 			path = SVGAssets;
 			sourceTree = "<group>";
@@ -307,9 +328,12 @@
 				EC6D0EF3232C1CE200EC4DDE /* Roboto-BlackItalic.ttf in Resources */,
 				EC245E912332CD7E0017A258 /* graph-v2.svg in Resources */,
 				EC6D0EF5232C1CE200EC4DDE /* Roboto-Light.ttf in Resources */,
+				EC6241162335129D00AAA0EE /* account_circle.svg in Resources */,
 				EC6D0EF8232C1CE200EC4DDE /* Roboto-MediumItalic.ttf in Resources */,
 				EC245E8F2332CD7E0017A258 /* search.svg in Resources */,
 				EC6D0EF0232C1CD800EC4DDE /* Roboto-Bold.ttf in Resources */,
+				EC6241182335129D00AAA0EE /* stars.svg in Resources */,
+				EC6241172335129D00AAA0EE /* settings.svg in Resources */,
 				EC6D0EF2232C1CDC00EC4DDE /* Roboto-Black.ttf in Resources */,
 				EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */,
 				EC6D0EFA232C1CE200EC4DDE /* Roboto-RegularItalic.ttf in Resources */,
@@ -397,13 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC62411C2335161000AAA0EE /* GraphsController.swift in Sources */,
 				EC6D0EC72329A31C00EC4DDE /* TabBarController.swift in Sources */,
 				EC6D0ECF232A7E1D00EC4DDE /* Extensions.swift in Sources */,
 				EC6D0ECB2329C44700EC4DDE /* DashboardController.swift in Sources */,
 				EC6D0ED2232A82EB00EC4DDE /* NavBarController.swift in Sources */,
+				EC62411A233515D300AAA0EE /* RecommendationsController.swift in Sources */,
 				EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */,
 				2111438122DBE526000323BF /* MedicationController.swift in Sources */,
+				EC62411E2335163400AAA0EE /* SearchController.swift in Sources */,
 				EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */,
+				EC62412023351ABC00AAA0EE /* DismissSegue.swift in Sources */,
 				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
