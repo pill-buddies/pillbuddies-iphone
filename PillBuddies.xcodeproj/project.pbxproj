@@ -43,6 +43,8 @@
 		EC6D0EFA232C1CE200EC4DDE /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */; };
 		EC6D0EFB232C1CE200EC4DDE /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EE8232C19D500EC4DDE /* Roboto-Thin.ttf */; };
 		EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEA232C19D500EC4DDE /* Roboto-ThinItalic.ttf */; };
+		EC74C9AA2339B35800C5CE79 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */; };
+		EC74C9AB2339B35800C5CE79 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */; };
 		ECCFD55523316A36007A6A64 /* pill-v5.svg in Resources */ = {isa = PBXBuildFile; fileRef = ECCFD554233165CF007A6A64 /* pill-v5.svg */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,20 @@
 			remoteInfo = PillBuddies;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC74C9A82339AB8A00C5CE79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC74C9AB2339B35800C5CE79 /* DesignSystem.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2111437B22DBE526000323BF /* PillBuddies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBuddies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +116,7 @@
 		EC6D0EED232C19D500EC4DDE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EC6D0EEE232C19D500EC4DDE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ECCFD554233165CF007A6A64 /* pill-v5.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pill-v5.svg"; sourceTree = "<group>"; };
 		F53197B993DE2E230D426368 /* Pods-PillBuddiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddiesTests.release.xcconfig"; path = "Target Support Files/Pods-PillBuddiesTests/Pods-PillBuddiesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C78960E2F0448C0344A061 /* Pods_PillBuddies.framework in Frameworks */,
+				EC74C9AA2339B35800C5CE79 /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +199,7 @@
 		9A495013475BD6475003BD44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */,
 				4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */,
 				D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */,
 			);
@@ -244,6 +263,7 @@
 				2111437822DBE526000323BF /* Frameworks */,
 				2111437922DBE526000323BF /* Resources */,
 				FAEFA1F4E4FE4C3C1E1E1889 /* [CP] Embed Pods Frameworks */,
+				EC74C9A82339AB8A00C5CE79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -596,7 +616,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
+				PRODUCT_BUNDLE_IDENTIFIER = pillpals.PillPals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PillBuddies/PillBuddies-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -618,7 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pillbuddies.PillBuddies;
+				PRODUCT_BUNDLE_IDENTIFIER = pillpals.PillPals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PillBuddies/PillBuddies-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

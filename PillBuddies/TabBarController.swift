@@ -8,14 +8,15 @@
 
 import UIKit
 import SVGKit
+import DesignSystem
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
     @IBInspectable var defaultIndex: Int = 0
 
     let dashIndex = 2
     let dashButton = UIButton.init(type: .custom)
-    let selectedColor = UIColor(hexString: "#FF7F00")
-    let unselectedColor = UIColor(hexString: "#28275A")
+    let selectedColor = DesignColours.orange
+    let unselectedColor = DesignColours.purple
     let dashItemDimension = 36
     let itemDimension = 28
 
@@ -30,7 +31,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         selectedIndex = defaultIndex
 
-        dashButton.backgroundColor = UIColor(hexString: "#DADAEA")
+        dashButton.backgroundColor = DesignColours.lightBlue
         dashButton.layer.cornerRadius = 32
         let svgImage = SVGKImage(named: dashImage)
         svgImage.size = CGSize(width: dashItemDimension, height: dashItemDimension)
@@ -88,9 +89,9 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+
         let inset = getInset()
-        
+
         dashButton.frame = CGRect.init(x: self.tabBar.center.x - 32, y: self.view.bounds.height - 64 - inset, width: 64, height: 64)
     }
 

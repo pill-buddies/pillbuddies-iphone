@@ -315,6 +315,20 @@
 			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
 			remoteInfo = CocoaLumberjack;
 		};
+		EC74C9992339A50F00C5CE79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC74C9942339A50F00C5CE79 /* DesignSystem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC74C97A2339A4F400C5CE79;
+			remoteInfo = DesignSystem;
+		};
+		EC74C99B2339A50F00C5CE79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC74C9942339A50F00C5CE79 /* DesignSystem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC74C9832339A4F400C5CE79;
+			remoteInfo = DesignSystemTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -359,7 +373,7 @@
 		29F756527A831C83998B273437F30768 /* SVGKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVGKit-Info.plist"; sourceTree = "<group>"; };
 		2A36FFD2A669A2D668218E56812DCDCC /* SVGKExporterUIImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKExporterUIImage.m; path = Source/Exporters/SVGKExporterUIImage.m; sourceTree = "<group>"; };
 		2A5A2E04C27BC283A1AA54DB7B0A2EAB /* SVGKParseResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParseResult.m; path = Source/Parsers/SVGKParseResult.m; sourceTree = "<group>"; };
-		2AABFEDB690EC078C451A750E0527F01 /* Pods_PillBuddiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PillBuddiesTests.framework; path = "Pods-PillBuddiesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AABFEDB690EC078C451A750E0527F01 /* Pods_PillBuddiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillBuddiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE0FFFB81D9E77D245DEDF98AB8759B /* CALayer+RecursiveClone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+RecursiveClone.h"; path = "Source/QuartzCore additions/CALayer+RecursiveClone.h"; sourceTree = "<group>"; };
 		2B61D80DC54ECB1DE5F77DE369B94644 /* Pods-PillBuddies.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PillBuddies.modulemap"; sourceTree = "<group>"; };
 		2CF76820ABD8F1972B906D76627B1AA8 /* SVGSVGElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSVGElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGSVGElement.h"; sourceTree = "<group>"; };
@@ -443,7 +457,7 @@
 		7A2B621CE66DCC07E43A4CF4FDD09882 /* Pods-PillBuddies-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PillBuddies-umbrella.h"; sourceTree = "<group>"; };
 		7C02440FCAE29D459BD07E68301DAB1C /* SVGTitleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTitleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.m"; sourceTree = "<group>"; };
 		7C7BBA6AC74CA9C444023A6595019908 /* SVGKExporterNSData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKExporterNSData.m; path = Source/Exporters/SVGKExporterNSData.m; sourceTree = "<group>"; };
-		7C9DCE4FBF866B48BB9BBD8DB75537CB /* Pods_PillBuddies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PillBuddies.framework; path = "Pods-PillBuddies.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9DCE4FBF866B48BB9BBD8DB75537CB /* Pods_PillBuddies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillBuddies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9162B35C3F757F60C01DB783CEDEA0 /* SVGKSourceLocalFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceLocalFile.h; path = Source/Sources/SVGKSourceLocalFile.h; sourceTree = "<group>"; };
 		7DF70BD5DA17CDBEC7DDCA26AC942FEB /* NSCharacterSet+SVGKExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCharacterSet+SVGKExtensions.h"; path = "Source/Foundation additions/NSCharacterSet+SVGKExtensions.h"; sourceTree = "<group>"; };
 		7E006C866FD91B7E3471187467C0080C /* Attr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Attr.h; path = "Source/DOM classes/Core DOM/Attr.h"; sourceTree = "<group>"; };
@@ -493,7 +507,7 @@
 		9C49ED085B1A3CAD6326BA6ED6C653E6 /* SVGKParserPatternsAndGradients.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserPatternsAndGradients.h; path = "Source/Parsers/Parser Extensions/SVGKParserPatternsAndGradients.h"; sourceTree = "<group>"; };
 		9CD0B91416DCAEDB4BF60D37E82100A5 /* SVGKSourceLocalFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceLocalFile.m; path = Source/Sources/SVGKSourceLocalFile.m; sourceTree = "<group>"; };
 		9CF0BF6FDE6A841FDEF974BA4709AD92 /* SVGPolygonElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGPolygonElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGPolygonElement.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0538793B46DB23CF4A2C70680E8D46 /* SVGClipPathElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGClipPathElement.m; path = "Source/DOM classes/SVG-DOM/SVGClipPathElement.m"; sourceTree = "<group>"; };
 		9E0D745C44B32F01042FCE77C0F07786 /* Comment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "Source/DOM classes/Core DOM/Comment.h"; sourceTree = "<group>"; };
 		9E21CBC3E2D3CD80C3382A53F067F3E5 /* SVGKLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKLayer.m; path = "Source/QuartzCore additions/SVGKLayer.m"; sourceTree = "<group>"; };
@@ -538,7 +552,7 @@
 		BCC8E0E4D373BDB1A08979BF409149F1 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		BD5111015318836D7AC73AA3B5B47DD5 /* Element.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Element.m; path = "Source/DOM classes/Core DOM/Element.m"; sourceTree = "<group>"; };
 		BED11B6D4F9FD6C826AB4FBD5A71E0ED /* SVGGroupElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGroupElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGroupElement.m"; sourceTree = "<group>"; };
-		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26A3336A596CBFEE0145B37D1F1F626 /* SVGKSourceString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceString.h; path = Source/Sources/SVGKSourceString.h; sourceTree = "<group>"; };
 		C2FED8EFB6BB5101FBEA2C261D7A2DB7 /* SVGKParserDefsAndUse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserDefsAndUse.h; path = "Source/Parsers/Parser Extensions/SVGKParserDefsAndUse.h"; sourceTree = "<group>"; };
 		C3DD69B9848C0ABEA03B6B90B3379E28 /* DocumentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DocumentType.m; path = "Source/DOM classes/Core DOM/DocumentType.m"; sourceTree = "<group>"; };
@@ -598,6 +612,7 @@
 		EAE8630D834F538B4FE2AF1979D46EA0 /* Document.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Document.h; path = "Source/DOM classes/Core DOM/Document.h"; sourceTree = "<group>"; };
 		EB0E1F7B7189C58A5A8AAA5C8BD1B6CF /* SVGKLayeredImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKLayeredImageView.m; path = "Source/UIKit additions/SVGKLayeredImageView.m"; sourceTree = "<group>"; };
 		EC3BAF03E37D0887D5A7B665C1FD448A /* SVGSVGElement_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGSVGElement_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGSVGElement_Mutable.h"; sourceTree = "<group>"; };
+		EC74C9942339A50F00C5CE79 /* DesignSystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DesignSystem.xcodeproj; path = ../../DesignSystem/DesignSystem.xcodeproj; sourceTree = "<group>"; };
 		EC97333609E1D25B5805C060D685D032 /* SVGDocument_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGDocument_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGDocument_Mutable.h"; sourceTree = "<group>"; };
 		ED47D1DE005C5F102FDBDA0CAD6E8523 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		ED4BAC1E41B5A5D3EABBBD0BE352DB91 /* StyleSheetList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StyleSheetList+Mutable.h"; path = "Source/DOM classes/Core DOM/StyleSheetList+Mutable.h"; sourceTree = "<group>"; };
@@ -614,7 +629,7 @@
 		F55FBB070708BFDF40758BEFDBFFAB3D /* Pods-PillBuddiesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PillBuddiesTests.modulemap"; sourceTree = "<group>"; };
 		F64757BE14F9A9C1DF08D9CF9FF85AFA /* SVGKParserDOM.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserDOM.m; path = "Source/Parsers/Parser Extensions/SVGKParserDOM.m"; sourceTree = "<group>"; };
 		F815A4E9D84ED5E13E5B29643FE1BB49 /* SVGCircleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGCircleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGCircleElement.h"; sourceTree = "<group>"; };
-		F8437BE58881E63196CF1F80191B3E2F /* SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVGKit.framework; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8437BE58881E63196CF1F80191B3E2F /* SVGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E4874DB3ABD04A1CA3F5B2D5CC5968 /* Pods-PillBuddies-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PillBuddies-Info.plist"; sourceTree = "<group>"; };
 		FAFBB7F4AE27B0461668B7B823F92377 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
 		FD32EF232B2622F45DF629061D0348B9 /* SVGKPointsAndPathsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKPointsAndPathsParser.h; path = Source/Parsers/SVGKPointsAndPathsParser.h; sourceTree = "<group>"; };
@@ -925,7 +940,6 @@
 				3F3740DDD11CE8C1FDE9AC77FFDEC861 /* TinySVGTextAreaElement.m */,
 				7CE27837218F8137599D18E7B96479C5 /* Support Files */,
 			);
-			name = SVGKit;
 			path = SVGKit;
 			sourceTree = "<group>";
 		};
@@ -1005,7 +1019,6 @@
 				7345A395D06D3A529272E6F9FC9E5036 /* Core */,
 				CD0A41D1E89CB1CA9F841AB3CB9C15BE /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -1043,12 +1056,22 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				EC74C9942339A50F00C5CE79 /* DesignSystem.xcodeproj */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				71F66B428D36C70C0F974B7D709DF827 /* Frameworks */,
 				956BDF0C52447B13AE59A77694001069 /* Pods */,
 				3EF3872B5C81E75DE7CDB8B918184C1C /* Products */,
 				4BD26DE08F0B79DDDE8424574DEBACCF /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		EC74C9952339A50F00C5CE79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC74C99A2339A50F00C5CE79 /* DesignSystem.framework */,
+				EC74C99C2339A50F00C5CE79 /* DesignSystemTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FB1C0486D827055C51C92D8BBF5EAC83 /* Pods-PillBuddiesTests */ = {
@@ -1348,6 +1371,12 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 3EF3872B5C81E75DE7CDB8B918184C1C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EC74C9952339A50F00C5CE79 /* Products */;
+					ProjectRef = EC74C9942339A50F00C5CE79 /* DesignSystem.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
@@ -1357,6 +1386,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EC74C99A2339A50F00C5CE79 /* DesignSystem.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DesignSystem.framework;
+			remoteRef = EC74C9992339A50F00C5CE79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC74C99C2339A50F00C5CE79 /* DesignSystemTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DesignSystemTests.xctest;
+			remoteRef = EC74C99B2339A50F00C5CE79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4D48F20BFCD11090A2F2DDBCB0781951 /* Resources */ = {

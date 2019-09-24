@@ -243,7 +243,7 @@
         <!--Recommendations Controller-->
         <scene sceneID="OHP-0F-Wqw">
             <objects>
-                <viewController title="Recommendations Controller" id="6eA-ja-obA" customClass="RecommendationsController" sceneMemberID="viewController">
+                <viewController title="Recommendations Controller" id="6eA-ja-obA" customClass="RecommendationsController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICV-bv-ypZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
