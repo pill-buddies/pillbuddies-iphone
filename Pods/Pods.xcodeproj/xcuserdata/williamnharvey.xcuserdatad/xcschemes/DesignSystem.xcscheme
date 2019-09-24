@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33F9886049C09F25EFD5576A7A7F8A72"
-               BuildableName = "Pods-PillBuddiesTests.framework"
-               BlueprintName = "Pods-PillBuddiesTests"
+               BlueprintIdentifier = "194A56F2B926B90E05CF289C5AA5A248"
+               BuildableName = "DesignSystem"
+               BlueprintName = "DesignSystem"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

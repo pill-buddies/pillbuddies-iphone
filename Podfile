@@ -8,6 +8,7 @@ target 'PillBuddies' do
   inhibit_all_warnings!
   # Pods for PillBuddies
   pod 'SVGKit', :git => 'https://github.com/SVGKit/SVGKit.git', :branch => '2.x'
+  pod 'DesignSystem', :git => 'https://github.com/pill-pals/design-system-ios.git', :branch => 'master'
 
   target 'PillBuddiesTests' do
     inherit! :search_paths
