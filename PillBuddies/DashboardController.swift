@@ -9,7 +9,7 @@
 import UIKit
 
 class DashboardController: BaseViewController {
-    // NSCalendar units for repetition
+    // NSCalendar units for repetition https://stackoverflow.com/a/42569084/6301806
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

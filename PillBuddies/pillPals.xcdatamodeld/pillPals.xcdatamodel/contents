@@ -9,12 +9,13 @@
     <entity name="Schedules" representedClassName="Schedules" syncable="YES" codeGenerationType="class">
         <attribute name="medicationUid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="repetition" optional="YES" attributeType="Binary"/>
+        <attribute name="repetitionCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="repetitionUnit" optional="YES" attributeType="Binary"/>
         <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications"/>
     </entity>
     <elements>
         <element name="Medications" positionX="-225.78515625" positionY="102.1953125" width="128" height="103"/>
-        <element name="Schedules" positionX="-106.01171875" positionY="-82.84375" width="128" height="118"/>
+        <element name="Schedules" positionX="-106.01171875" positionY="-82.84375" width="128" height="133"/>
     </elements>
 </model>
