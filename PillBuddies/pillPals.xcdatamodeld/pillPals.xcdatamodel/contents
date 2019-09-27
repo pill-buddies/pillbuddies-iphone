@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A558d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Medications" representedClassName="Medications" syncable="YES" codeGenerationType="class">
+        <attribute name="dosage" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedules" inverseName="medication" inverseEntity="Schedules"/>
+    </entity>
+    <entity name="Schedules" representedClassName="Schedules" syncable="YES" codeGenerationType="class">
+        <attribute name="medicationUid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="repetition" optional="YES" attributeType="Binary"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications"/>
+    </entity>
+    <elements>
+        <element name="Medications" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Schedules" positionX="-54" positionY="9" width="128" height="118"/>
+    </elements>
+</model>

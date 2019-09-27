@@ -18,6 +18,7 @@
 		EC245E8F2332CD7E0017A258 /* search.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8B2332CD7E0017A258 /* search.svg */; };
 		EC245E902332CD7E0017A258 /* format_list_bulleted.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */; };
 		EC245E912332CD7E0017A258 /* graph-v2.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC245E8D2332CD7E0017A258 /* graph-v2.svg */; };
+		EC3759F9233E975E0088465F /* pillPals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC3759F7233E975E0088465F /* pillPals.xcdatamodeld */; };
 		EC6241162335129D00AAA0EE /* account_circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241132335129C00AAA0EE /* account_circle.svg */; };
 		EC6241172335129D00AAA0EE /* settings.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241142335129C00AAA0EE /* settings.svg */; };
 		EC6241182335129D00AAA0EE /* stars.svg in Resources */ = {isa = PBXBuildFile; fileRef = EC6241152335129C00AAA0EE /* stars.svg */; };
@@ -92,6 +93,7 @@
 		EC245E8B2332CD7E0017A258 /* search.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = search.svg; sourceTree = "<group>"; };
 		EC245E8C2332CD7E0017A258 /* format_list_bulleted.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = format_list_bulleted.svg; sourceTree = "<group>"; };
 		EC245E8D2332CD7E0017A258 /* graph-v2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "graph-v2.svg"; sourceTree = "<group>"; };
+		EC3759F8233E975E0088465F /* pillPals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pillPals.xcdatamodel; sourceTree = "<group>"; };
 		EC6241132335129C00AAA0EE /* account_circle.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = account_circle.svg; sourceTree = "<group>"; };
 		EC6241142335129C00AAA0EE /* settings.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = settings.svg; sourceTree = "<group>"; };
 		EC6241152335129C00AAA0EE /* stars.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stars.svg; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				ECCFD55623316A4B007A6A64 /* SVGAssets */,
 				2111437E22DBE526000323BF /* AppDelegate.swift */,
+				EC3759F7233E975E0088465F /* pillPals.xcdatamodeld */,
 				EC6D0ECE232A7E1D00EC4DDE /* Extensions.swift */,
 				2111438022DBE526000323BF /* MedicationController.swift */,
 				EC6D0ECA2329C44700EC4DDE /* DashboardController.swift */,
@@ -315,7 +318,7 @@
 				};
 			};
 			buildConfigurationList = 2111437622DBE526000323BF /* Build configuration list for PBXProject "PillBuddies" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -450,6 +453,7 @@
 				EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */,
 				2111438122DBE526000323BF /* MedicationController.swift in Sources */,
 				EC62411E2335163400AAA0EE /* SearchController.swift in Sources */,
+				EC3759F9233E975E0088465F /* pillPals.xcdatamodeld in Sources */,
 				EC6D0ECD2329D23600EC4DDE /* HistoryController.swift in Sources */,
 				EC62412023351ABC00AAA0EE /* DismissSegue.swift in Sources */,
 				2111437F22DBE526000323BF /* AppDelegate.swift in Sources */,
@@ -721,6 +725,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC3759F7233E975E0088465F /* pillPals.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC3759F8233E975E0088465F /* pillPals.xcdatamodel */,
+			);
+			currentVersion = EC3759F8233E975E0088465F /* pillPals.xcdatamodel */;
+			path = pillPals.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2111437322DBE526000323BF /* Project object */;
 }
