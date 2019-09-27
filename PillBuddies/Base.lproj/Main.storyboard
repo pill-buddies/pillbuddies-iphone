@@ -56,6 +56,10 @@
         <scene sceneID="cNF-KE-Z9k">
             <objects>
                 <viewController title="Search Controller" id="joY-Z8-Pt0" customClass="SearchController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ICE-ZD-2vB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDg-VZ-0TL"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yMI-rt-Hid">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +72,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="J6e-UE-RHm"/>
+                        <viewLayoutGuide key="safeArea" id="2xt-gE-f9C"/>
                     </view>
                     <navigationItem key="navigationItem" id="6V0-30-8MS">
                         <rightBarButtonItems>
@@ -98,6 +102,10 @@
         <scene sceneID="vAb-7B-voM">
             <objects>
                 <viewController title="Dashboard Controller" id="7vK-4u-pHq" customClass="DashboardController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W4k-mh-XCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="p6f-0r-9NF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GxI-NE-RMq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,13 +328,13 @@
                                                                 <rect key="frame" x="0.0" y="109.33333333333331" width="343" height="72"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vyvanse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrj-ee-0mG">
-                                                                        <rect key="frame" x="8" y="8" width="75" height="24"/>
+                                                                        <rect key="frame" x="8" y="8.0000000000000018" width="74.666666666666671" height="23.666666666666671"/>
                                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daA-fK-KyY">
-                                                                        <rect key="frame" x="8" y="43" width="75" height="22"/>
+                                                                        <rect key="frame" x="8" y="42.666666666666629" width="74.666666666666671" height="21.333333333333329"/>
                                                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -403,12 +411,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="trailing" secondItem="Vz2-GY-nX1" secondAttribute="trailing" id="BzD-n7-UWg"/>
-                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="top" secondItem="Vz2-GY-nX1" secondAttribute="top" constant="8" id="Qvh-g1-dwY"/>
-                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="leading" secondItem="Vz2-GY-nX1" secondAttribute="leading" id="f27-cu-F94"/>
-                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="bottom" secondItem="Vz2-GY-nX1" secondAttribute="bottom" id="k80-DP-zrd"/>
+                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="trailing" secondItem="GxI-NE-RMq" secondAttribute="trailing" id="BzD-n7-UWg"/>
+                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="top" secondItem="W4k-mh-XCA" secondAttribute="bottom" constant="8" id="Qvh-g1-dwY"/>
+                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="leading" secondItem="GxI-NE-RMq" secondAttribute="leading" id="f27-cu-F94"/>
+                            <constraint firstItem="KJ8-tg-rxn" firstAttribute="bottom" secondItem="p6f-0r-9NF" secondAttribute="top" id="k80-DP-zrd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Vz2-GY-nX1"/>
+                        <viewLayoutGuide key="safeArea" id="Xyz-O2-Vg9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="sBq-0C-80U"/>
                     <navigationItem key="navigationItem" id="ZuQ-Yq-lIa">
@@ -439,6 +447,10 @@
         <scene sceneID="H1n-VG-DBX">
             <objects>
                 <viewController title="Medications Controller" id="UGa-xl-cVJ" customClass="MedicationController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KGO-zP-QPN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ztk-2m-Dep"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o9h-IA-NgX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +463,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xcw-DO-r9J"/>
+                        <viewLayoutGuide key="safeArea" id="g5m-aS-TMK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="ssr-dM-R9v"/>
                     <navigationItem key="navigationItem" id="gjd-jx-obz">
@@ -542,6 +554,10 @@
         <scene sceneID="OHP-0F-Wqw">
             <objects>
                 <viewController title="Recommendations Controller" id="6eA-ja-obA" customClass="RecommendationsController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GE7-xP-NIj"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZw-li-cIx"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ICV-bv-ypZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -554,7 +570,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="I5c-Gf-eeh"/>
+                        <viewLayoutGuide key="safeArea" id="2gY-2P-mzv"/>
                     </view>
                     <navigationItem key="navigationItem" id="0B3-Um-Gnh">
                         <rightBarButtonItems>
@@ -584,6 +600,10 @@
         <scene sceneID="vI0-GA-nNI">
             <objects>
                 <viewController title="Graphs Controller" id="nAN-ew-g7C" customClass="GraphsController" customModule="PillBuddies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Xu-WL-xf8"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nN-7c-Aeh"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uvf-of-OAQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -596,7 +616,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="r9u-eD-aT5"/>
+                        <viewLayoutGuide key="safeArea" id="z3Q-Ml-bR9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="fdu-wJ-3qf"/>
                     <navigationItem key="navigationItem" id="KGa-Un-P8h">
@@ -667,6 +687,10 @@
         <scene sceneID="Pv2-hy-lDG">
             <objects>
                 <viewController title="Profile Controller" id="vH9-HC-Z4g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpe-4M-K76"/>
+                        <viewControllerLayoutGuide type="bottom" id="bYp-ff-uDq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="N6F-ub-FD6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -679,7 +703,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ThD-ch-4qo"/>
+                        <viewLayoutGuide key="safeArea" id="59L-PJ-ISk"/>
                     </view>
                     <navigationItem key="navigationItem" id="hJ1-r5-fJT"/>
                 </viewController>
@@ -691,6 +715,10 @@
         <scene sceneID="a4W-4h-14S">
             <objects>
                 <viewController title="Settings Controller" id="jvX-V8-UAn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rnH-aB-QnP"/>
+                        <viewControllerLayoutGuide type="bottom" id="TAz-Xa-Q01"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MV8-dg-kcG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,7 +731,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5AD-u5-rVT"/>
+                        <viewLayoutGuide key="safeArea" id="Knn-cg-WXE"/>
                     </view>
                     <navigationItem key="navigationItem" id="P8P-8s-Sm5"/>
                 </viewController>
@@ -715,6 +743,10 @@
         <scene sceneID="nnG-5K-l7m">
             <objects>
                 <viewController title="Badges Controller" id="cA6-gn-oZx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJI-5E-3Ny"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nvl-J8-f4s"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Nlg-x4-7iC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -727,7 +759,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="OQa-jr-egM"/>
+                        <viewLayoutGuide key="safeArea" id="s3c-cj-GCK"/>
                     </view>
                     <navigationItem key="navigationItem" id="cKW-Z4-s4S"/>
                 </viewController>
