@@ -3,8 +3,8 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -72,7 +72,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2xt-gE-f9C"/>
                     </view>
                     <navigationItem key="navigationItem" id="6V0-30-8MS">
                         <rightBarButtonItems>
@@ -394,7 +393,7 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="gkU-01-MRZ" firstAttribute="leading" secondItem="KJ8-tg-rxn" secondAttribute="leading" id="5km-pW-1Dc"/>
                                     <constraint firstItem="gkU-01-MRZ" firstAttribute="width" secondItem="KJ8-tg-rxn" secondAttribute="width" id="Jom-7j-gma"/>
@@ -416,7 +415,6 @@
                             <constraint firstItem="KJ8-tg-rxn" firstAttribute="leading" secondItem="GxI-NE-RMq" secondAttribute="leading" id="f27-cu-F94"/>
                             <constraint firstItem="KJ8-tg-rxn" firstAttribute="bottom" secondItem="p6f-0r-9NF" secondAttribute="top" id="k80-DP-zrd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xyz-O2-Vg9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="sBq-0C-80U"/>
                     <navigationItem key="navigationItem" id="ZuQ-Yq-lIa">
@@ -463,7 +461,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="g5m-aS-TMK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="ssr-dM-R9v"/>
                     <navigationItem key="navigationItem" id="gjd-jx-obz">
@@ -570,7 +567,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2gY-2P-mzv"/>
                     </view>
                     <navigationItem key="navigationItem" id="0B3-Um-Gnh">
                         <rightBarButtonItems>
@@ -616,7 +612,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="z3Q-Ml-bR9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="fdu-wJ-3qf"/>
                     <navigationItem key="navigationItem" id="KGa-Un-P8h">
@@ -703,7 +698,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="59L-PJ-ISk"/>
                     </view>
                     <navigationItem key="navigationItem" id="hJ1-r5-fJT"/>
                 </viewController>
@@ -731,7 +725,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Knn-cg-WXE"/>
                     </view>
                     <navigationItem key="navigationItem" id="P8P-8s-Sm5"/>
                 </viewController>
@@ -759,7 +752,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="s3c-cj-GCK"/>
                     </view>
                     <navigationItem key="navigationItem" id="cKW-Z4-s4S"/>
                 </viewController>
@@ -770,7 +762,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tla-mU-fxw"/>
-        <segue reference="4hY-oz-0mX"/>
-        <segue reference="eRR-NQ-rxu"/>
+        <segue reference="ivA-Mx-7JA"/>
+        <segue reference="vEW-kN-4aN"/>
     </inferredMetricsTieBreakers>
 </document>
