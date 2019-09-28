@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import SVGKit
 
+// MARK: - UIColor
+
 extension UIColor {
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -30,6 +32,8 @@ extension UIColor {
     }
 }
 
+// MARK: - SVGKImage
+
 extension SVGKImage {
     convenience init(named: String) {
         if let imagePath = Bundle.main.path(forResource: named, ofType: "svg")
@@ -41,6 +45,8 @@ extension SVGKImage {
         }
     }
 }
+
+// MARK: - UIView
 
 extension UIView {
     @IBInspectable var shadowRadius: CGFloat {
@@ -86,5 +92,26 @@ extension UIView {
         set {
             layer.cornerRadius = newValue
         }
+    }
+}
+
+// MARK: - Date
+
+extension Date {
+    func addMonth(n: Int) -> Date {
+        let cal = NSCalendar.current
+        return cal.date(byAdding: .month, value: n, to: self)!
+    }
+    func addDay(n: Int) -> Date {
+        let cal = NSCalendar.current
+        return cal.date(byAdding: .day, value: n, to: self)!
+    }
+    func addSec(n: Int) -> Date {
+        let cal = NSCalendar.current
+        return cal.date(byAdding: .second, value: n, to: self)!
+    }
+    func addUnit(n: Int, u: Calendar.Component) -> Date {
+        let cal = Calendar.current
+        return cal.date(byAdding: u, value: n, to: self)!
     }
 }
