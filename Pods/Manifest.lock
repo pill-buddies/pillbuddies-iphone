@@ -2,7 +2,7 @@ PODS:
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
-  - DesignSystem (1.0.0)
+  - DesignSystem (1.0.1)
   - SVGKit (2.1.0):
     - CocoaLumberjack (~> 3.0)
 
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `2.x`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - CocoaLumberjack
 
 EXTERNAL SOURCES:
@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   DesignSystem:
-    :commit: 2f55b089579c037d353d53e472b25073b8b57290
+    :commit: de8c8c229f448ea7961dd0e4de87dc3efafd9ddb
     :git: https://github.com/pill-pals/design-system-ios.git
   SVGKit:
     :commit: 4b507e48da30711e25d1bcdd19580f25887a2267
@@ -32,9 +32,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
-  DesignSystem: 46452bcb210f730d66bcf1d925691cddeffe74e8
+  DesignSystem: 3b886bf0508f8cde32c569de5e997cad33ea8940
   SVGKit: 8a2fc74258bdb2abb54d3b65f3dd68b0277a9c4d
 
-PODFILE CHECKSUM: d5ef981b7409a038df526187f30e66f2e261f360
+PODFILE CHECKSUM: 5fcf57b31fbccc00baec66c693764364c0677da9
 
 COCOAPODS: 1.8.0

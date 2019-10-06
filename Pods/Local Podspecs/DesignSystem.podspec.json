@@ -1,6 +1,6 @@
 {
   "name": "DesignSystem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "Pill Pals iOS Design System",
   "description": "Colours, components, and systems for the Pill Pals iOS app",
   "homepage": "https://github.com/pill-pals/design-system-ios",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/pill-pals/design-system-ios.git",
-    "commit": "8bbd1afe00e5f3a92a5995ebf92719505b9130e0"
+    "commit": "79c405fb3e6522ca9fd0da36fcfde1640e0b574d"
   },
   "source_files": [
     "Classes",

@@ -3,15 +3,15 @@
     <entity name="Medications" representedClassName="Medications" syncable="YES" codeGenerationType="class">
         <attribute name="dosage" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="uid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
         <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedules" inverseName="medication" inverseEntity="Schedules"/>
     </entity>
     <entity name="Schedules" representedClassName="Schedules" syncable="YES" codeGenerationType="class">
-        <attribute name="medicationUid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="medicationUid" optional="YES" attributeType="String"/>
         <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="repetitionCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="repetitionUnit" optional="YES" attributeType="Binary"/>
-        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
         <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications"/>
     </entity>
     <elements>
