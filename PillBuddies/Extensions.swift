@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SVGKit
+import CoreData
 
 // MARK: - UIColor
 
@@ -113,5 +114,93 @@ extension Date {
     func addUnit(n: Int, u: Calendar.Component) -> Date {
         let cal = Calendar.current
         return cal.date(byAdding: u, value: n, to: self)!
+    }
+    static var yesterday: Date { return Date().dayBefore }
+    static var tomorrow:  Date { return Date().dayAfter }
+    var dayBefore: Date {
+        return Calendar.current.date(byAdding: .day, value: -1, to: midnight)!
+    }
+    var dayAfter: Date {
+        return Calendar.current.date(byAdding: .day, value: 1, to: midnight)!
+    }
+    var midnight: Date {
+        return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: self)!
+    }
+    static func getUnitByIndex(index: Int32) -> Calendar.Component {
+        switch index {
+        case 0: return .year
+        case 1: return .month
+        case 2: return .day
+        case 3: return .hour
+        case 4: return .minute
+        case 5: return .second
+        default: return .day
+        }
+    }
+    static func getIndexByUnit(unit: Calendar.Component) -> Int32 {
+        switch unit {
+        case .year: return 0
+        case .month: return 1
+        case .day: return 2
+        case .hour: return 3
+        case .minute: return 4
+        case .second: return 5
+        default: return 2
+        }
+    }
+    func toString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        return formatter.string(from: self)
+    }
+}
+
+// MARK: - NSManagedObject
+
+extension NSManagedObject {
+    func copyProperties() -> NSManagedObject {
+        let cloned = NSManagedObject(entity: self.entity, insertInto: nil)
+
+        for (key,_) in self.entity.attributesByName {
+            cloned.setValue(self.value(forKey: key), forKey: key)
+        }
+
+//        for (key,_) in self.entity.relationshipsByName {
+//            let sourceSet = self.mutableSetValue(forKey: key)
+//            let clonedSet = cloned.mutableSetValue(forKey: key)
+//            let e = sourceSet.objectEnumerator()
+//
+//            var relatedObj = e.nextObject() as? NSManagedObject
+//
+//            while ((relatedObj) != nil) {
+//
+//                let clonedRelatedObject = relatedObj!.copyProperties()
+//                clonedSet.add(clonedRelatedObject)
+//                relatedObj = e.nextObject() as? NSManagedObject
+//            }
+//        }
+
+        return cloned
+    }
+}
+
+//MARK: - UIStackView
+extension UIStackView {
+    func removeAllArrangedSubviewsExceptFirst() {
+        var skipFirst = true
+        let removedSubviews = arrangedSubviews.reduce([]) { (allSubviews, subview) -> [UIView] in
+            if (skipFirst) {
+                skipFirst = false
+                return allSubviews
+            }
+            self.removeArrangedSubview(subview)
+            return allSubviews + [subview]
+        }
+        
+        // Deactivate all constraints
+        removedSubviews.flatMap({ $0.constraints }).forEach { $0.isActive = false }
+        
+        // Remove the views from self
+        removedSubviews.forEach({ $0.removeFromSuperview() })
     }
 }

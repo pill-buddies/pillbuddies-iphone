@@ -8,9 +8,68 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class BaseViewController: UIViewController {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var managedContext: NSManagedObjectContext;
+    var medicationsEntity: NSEntityDescription;
+    var schedulesEntity: NSEntityDescription;
+
+    // This extends the superclass.
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        self.managedContext = appDelegate.persistentContainer.viewContext
+        self.medicationsEntity = NSEntityDescription.entity(forEntityName: "Medications", in: managedContext)!
+        self.schedulesEntity = NSEntityDescription.entity(forEntityName: "Schedules", in: managedContext)!
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
     
+    func request(entity: String, uid: String?, sortBy: String?) -> [NSManagedObject] {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        if (uid != nil) {
+            let filter = "uid"
+            let predicate = NSPredicate(format: "type = %@", filter)
+            request.predicate = predicate
+        }
+        if (sortBy != nil) {
+            let sort = NSSortDescriptor(key: sortBy, ascending: true)
+            request.sortDescriptors = [sort]
+        }
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try managedContext.fetch(request) as! [NSManagedObject]
+            return result;
+        } catch {
+            fatalError("Failed")
+        }
+    }
+
+    func request(entity: String) -> [NSManagedObject] {
+        return request(entity: entity, uid: nil, sortBy: nil)
+    }
+    func request(entity: String, sortBy: String) -> [NSManagedObject] {
+        return request(entity: entity, uid: nil, sortBy: sortBy)
+    }
+    func request(entity: String, uid: String) -> [NSManagedObject] {
+        return request(entity: entity, uid: uid, sortBy: nil)
+    }
+
+    func save() {
+        do {
+           try managedContext.save()
+          } catch {
+           print("Failed saving")
+        }
+    }
+
+    // This is also necessary when extending the superclass.
+    required init?(coder aDecoder: NSCoder) {
+        self.managedContext = appDelegate.persistentContainer.viewContext
+        self.medicationsEntity = NSEntityDescription.entity(forEntityName: "Medications", in: managedContext)!
+        self.schedulesEntity = NSEntityDescription.entity(forEntityName: "Schedules", in: managedContext)!
+        super.init(coder: aDecoder)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

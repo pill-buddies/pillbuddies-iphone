@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A558d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19B77a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Logs" representedClassName="Logs" syncable="YES" codeGenerationType="class">
+        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedules" inverseName="logs" inverseEntity="Schedules"/>
+    </entity>
     <entity name="Medications" representedClassName="Medications" syncable="YES" codeGenerationType="class">
         <attribute name="dosage" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -7,15 +13,16 @@
         <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedules" inverseName="medication" inverseEntity="Schedules"/>
     </entity>
     <entity name="Schedules" representedClassName="Schedules" syncable="YES" codeGenerationType="class">
-        <attribute name="medicationUid" optional="YES" attributeType="String"/>
         <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="repetitionCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="repetitionUnit" optional="YES" attributeType="Binary"/>
-        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <attribute name="repetitionUnit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Logs" inverseName="schedule" inverseEntity="Logs"/>
         <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications"/>
     </entity>
     <elements>
-        <element name="Medications" positionX="-225.78515625" positionY="102.1953125" width="128" height="103"/>
-        <element name="Schedules" positionX="-106.01171875" positionY="-82.84375" width="128" height="133"/>
+        <element name="Medications" positionX="-311.10546875" positionY="-370.9453125" width="128" height="103"/>
+        <element name="Schedules" positionX="-104.12890625" positionY="-221.9140625" width="128" height="133"/>
+        <element name="Logs" positionX="87.3046875" positionY="-25.59765625" width="128" height="103"/>
     </elements>
 </model>
