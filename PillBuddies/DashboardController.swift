@@ -21,6 +21,7 @@ class DashboardController: BaseViewController {
         super.viewDidLoad()
         currentStack.translatesAutoresizingMaskIntoConstraints = false;
         //UIScreen.main.bounds.size.width
+        
         var schedules = self.request(entity: "Schedules", sortBy: "occurance");
         if (schedules.count == 0) {
             createTestSchedules()
@@ -91,9 +92,11 @@ class DashboardController: BaseViewController {
     
     //MARK: - For testing
     func deleteAll(objects: [NSManagedObject]) {
+        print(objects)
         for object in objects {
             self.managedContext.delete(object)
         }
+        save()
     }
     
     func createTestSchedules() {
@@ -110,7 +113,6 @@ class DashboardController: BaseViewController {
         else {
             newMedication = medications[0] as! Medications
         }
-        
 
         let firstSchedule = Schedules(context: self.managedContext)
         firstSchedule.uid = UUID().uuidString
@@ -122,25 +124,25 @@ class DashboardController: BaseViewController {
         components.second = 0
         let time = calendar.date(from: components)
         firstSchedule.occurance = time
-        //1 day
-        firstSchedule.repetitionCount = 1
-        firstSchedule.repetitionUnit = Date.getIndexByUnit(unit: .day)
+        //12 hours
+        firstSchedule.repetitionCount = 12
+        firstSchedule.repetitionUnit = Date.getIndexByUnit(unit: .hour)
         firstSchedule.medication = newMedication
 
-        let secondSchedule = Schedules(context: self.managedContext)
-        secondSchedule.uid = UUID().uuidString
-        //8 pm
-
-        var secondComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
-        secondComponents.hour = 20
-        secondComponents.minute = 0
-        secondComponents.second = 0
-        let secondTime = calendar.date(from: secondComponents)
-        secondSchedule.occurance = secondTime
-        //1 day
-        secondSchedule.repetitionCount = 1
-        secondSchedule.repetitionUnit = Date.getIndexByUnit(unit: .day)
-        secondSchedule.medication = newMedication
+//        let secondSchedule = Schedules(context: self.managedContext)
+//        secondSchedule.uid = UUID().uuidString
+//        //8 pm
+//
+//        var secondComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
+//        secondComponents.hour = 20
+//        secondComponents.minute = 0
+//        secondComponents.second = 0
+//        let secondTime = calendar.date(from: secondComponents)
+//        secondSchedule.occurance = secondTime
+//        //1 day
+//        secondSchedule.repetitionCount = 1
+//        secondSchedule.repetitionUnit = Date.getIndexByUnit(unit: .day)
+//        secondSchedule.medication = newMedication
         save()
     }
 

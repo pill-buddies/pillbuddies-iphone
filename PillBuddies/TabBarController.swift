@@ -15,7 +15,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
 
     let dashIndex = 2
     let dashButton = UIButton.init(type: .custom)
-    let selectedColor = DesignColours.orange
+    let selectedColor = DesignColours.hotPink
     let unselectedColor = DesignColours.purple
     let dashItemDimension = 36
     let itemDimension = 28
