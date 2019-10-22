@@ -15,13 +15,13 @@ class DashboardController: BaseViewController {
     @IBOutlet weak var upcomingStack: UIStackView!
     @IBOutlet weak var completedStack: UIStackView!
     var timer = Timer()
+    var cardSchedules: [Schedules] = []
     
     // NSCalendar units for repetition https://stackoverflow.com/a/42569084/6301806
     override func viewDidLoad() {
         super.viewDidLoad()
         currentStack.translatesAutoresizingMaskIntoConstraints = false;
-        //UIScreen.main.bounds.size.width
-        
+
         var schedules = self.request(entity: "Schedules", sortBy: "occurance");
         if (schedules.count == 0) {
             createTestSchedules()
@@ -31,41 +31,67 @@ class DashboardController: BaseViewController {
         timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(DashboardController.update), userInfo: nil, repeats: true)
     }
     
+    //MARK: - Logging Drugs
+    @objc func drugLogFunction(_ sender: UIButton) {
+        let schedule = cardSchedules[sender.tag]
+        let databaseSchedule = self.request(entity: "Schedules", uid: schedule.uid!)[0] as! Schedules
+        let newLog = Logs(context: self.managedContext)
+        newLog.uid = UUID().uuidString
+        newLog.occurance = Date()
+        newLog.due = databaseSchedule.occurance
+        let n = Int(databaseSchedule.repetitionCount)
+        let u = Date.getUnitByIndex(index: databaseSchedule.repetitionUnit)
+        databaseSchedule.occurance = databaseSchedule.occurance!.addUnit(n: n, u: u)
+        newLog.schedule = databaseSchedule
+        save()
+        update()
+    }
+
     // MARK: - Set up cards
-    
     func setUpScheduleCards(schedules: [NSManagedObject]) {
         for databaseSchedule in schedules as! [Schedules] {
             var testSchedule = databaseSchedule.copyProperties() as! Schedules
             testSchedule.medication = databaseSchedule.medication!.copyProperties() as? Medications
-            testSchedule.logs = databaseSchedule.logs
+            testSchedule.logSet = databaseSchedule.logs
+
+            let logObjects = databaseSchedule.logs!.allObjects as! [Logs]
+            let loggedToday = logObjects.filter { $0.occurance! > Date.today && $0.occurance! < Date.tomorrow }.count
             let n = Int(databaseSchedule.repetitionCount)
             let u = Date.getUnitByIndex(index: databaseSchedule.repetitionUnit)
-            
-            var cardSchedules: [Schedules] = [];
+
+            for _ in 0..<loggedToday {
+                testSchedule.occurance = testSchedule.occurance!.addUnit(n: -n, u: u)
+            }
+
+            cardSchedules = [];
             while(testSchedule.occurance! < Date.tomorrow) {
-                cardSchedules.append(testSchedule);
+                if(testSchedule.occurance! > Date.today) {
+                    cardSchedules.append(testSchedule)
+                }
                 testSchedule = testSchedule.copyProperties() as! Schedules
                 testSchedule.medication = databaseSchedule.medication!.copyProperties() as? Medications
-                testSchedule.logs = databaseSchedule.logs
+                testSchedule.logSet = databaseSchedule.logs
                 testSchedule.occurance = testSchedule.occurance!.addUnit(n: n, u: u)
             }
-            
-            for schedule in cardSchedules {
+
+            for (index, schedule) in cardSchedules.enumerated(){
                 let new = DrugCard(frame: CGRect(x: 0, y: 0, width: currentStack.frame.width, height: 72))
                 new.drugName.text = schedule.medication!.name
                 new.drugTime.text = schedule.occurance!.toString()
-                
+                new.logButton.tag = index
+                new.logButton.addTarget(self, action: #selector(drugLogFunction(_:)), for: .touchUpInside)
                 
                 // MARK: Select stack and colour
                 let calendar = Calendar.current
                 let currentDate = calendar.date(byAdding: .minute, value: 10, to: Date())
-                let logs = schedule.logs!.allObjects as! [Logs]
+                let logs = schedule.logSet!.allObjects as! [Logs]
                 let currentLog = logs.filter { $0.due == schedule.occurance }
                 if (currentLog.count > 0) {
                     // Completed
                     new.lateLabel.isHidden = true
+                    new.logButton.isHidden = true
                     new.drugCard.backgroundColor = DesignColours.grey
-                    currentStack.addArrangedSubview(new)
+                    completedStack.addArrangedSubview(new)
                 }
                 else if (schedule.occurance! < currentDate!) {
                     // Current
@@ -89,6 +115,8 @@ class DashboardController: BaseViewController {
             }
         }
     }
+    
+    
     
     //MARK: - For testing
     func deleteAll(objects: [NSManagedObject]) {

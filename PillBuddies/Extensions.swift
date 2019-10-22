@@ -94,6 +94,16 @@ extension UIView {
             layer.cornerRadius = newValue
         }
     }
+    
+    func findViewController() -> UIViewController? {
+        if let nextResponder = self.next as? UIViewController {
+            return nextResponder
+        } else if let nextResponder = self.next as? UIView {
+            return nextResponder.findViewController()
+        } else {
+            return nil
+        }
+    }
 }
 
 // MARK: - Date
@@ -117,11 +127,15 @@ extension Date {
     }
     static var yesterday: Date { return Date().dayBefore }
     static var tomorrow:  Date { return Date().dayAfter }
+    static var today:  Date { return Date().morning }
     var dayBefore: Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: midnight)!
     }
     var dayAfter: Date {
         return Calendar.current.date(byAdding: .day, value: 1, to: midnight)!
+    }
+    var morning: Date {
+        return Calendar.current.date(byAdding: .day, value: 0, to: midnight)!
     }
     var midnight: Date {
         return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: self)!
@@ -202,5 +216,31 @@ extension UIStackView {
         
         // Remove the views from self
         removedSubviews.forEach({ $0.removeFromSuperview() })
+    }
+}
+
+//MARK: - Schedules
+extension Schedules {
+    struct Holder {
+        static var _logSet: NSSet?
+    }
+    public var logSet: NSSet? {
+        get {
+            return Holder._logSet
+        }
+        set(newValue) {
+            Holder._logSet = newValue
+        }
+    }
+}
+
+//MARK: - Int
+extension Int {
+    func of<T>(iteration: (Int) -> T) -> [T] {
+        var collection = [T]()
+        for i in 0..<self {
+            collection.append(iteration(i))
+        }
+        return collection
     }
 }

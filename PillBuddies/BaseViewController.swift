@@ -27,8 +27,7 @@ class BaseViewController: UIViewController {
     func request(entity: String, uid: String?, sortBy: String?) -> [NSManagedObject] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         if (uid != nil) {
-            let filter = "uid"
-            let predicate = NSPredicate(format: "type = %@", filter)
+            let predicate = NSPredicate(format: "uid = %@", uid!)
             request.predicate = predicate
         }
         if (sortBy != nil) {
@@ -37,7 +36,7 @@ class BaseViewController: UIViewController {
         }
         request.returnsObjectsAsFaults = false
         do {
-            let result = try managedContext.fetch(request) as! [NSManagedObject]
+            let result = try self.managedContext.fetch(request) as! [NSManagedObject]
             return result;
         } catch {
             fatalError("Failed")

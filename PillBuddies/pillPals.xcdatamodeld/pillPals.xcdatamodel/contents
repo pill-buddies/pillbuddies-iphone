@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19B77a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19B77a" minimumToolsVersion="Xcode 8.0" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Logs" representedClassName="Logs" syncable="YES" codeGenerationType="class">
-        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="uid" optional="YES" attributeType="String"/>
-        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedules" inverseName="logs" inverseEntity="Schedules"/>
+        <attribute name="due" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedules" inverseName="logs" inverseEntity="Schedules" syncable="YES"/>
     </entity>
     <entity name="Medications" representedClassName="Medications" syncable="YES" codeGenerationType="class">
-        <attribute name="dosage" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="uid" optional="YES" attributeType="String"/>
-        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedules" inverseName="medication" inverseEntity="Schedules"/>
+        <attribute name="dosage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Schedules" inverseName="medication" inverseEntity="Schedules" syncable="YES"/>
     </entity>
     <entity name="Schedules" representedClassName="Schedules" syncable="YES" codeGenerationType="class">
-        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="repetitionCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="repetitionUnit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="uid" optional="YES" attributeType="String"/>
-        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Logs" inverseName="schedule" inverseEntity="Logs"/>
-        <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications"/>
+        <attribute name="occurance" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="repetitionCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="repetitionUnit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="logs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Logs" inverseName="schedule" inverseEntity="Logs" syncable="YES"/>
+        <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medications" inverseName="schedules" inverseEntity="Medications" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Logs" positionX="87.3046875" positionY="-25.59765625" width="128" height="103"/>
         <element name="Medications" positionX="-311.10546875" positionY="-370.9453125" width="128" height="103"/>
         <element name="Schedules" positionX="-104.12890625" positionY="-221.9140625" width="128" height="133"/>
-        <element name="Logs" positionX="87.3046875" positionY="-25.59765625" width="128" height="103"/>
     </elements>
 </model>
