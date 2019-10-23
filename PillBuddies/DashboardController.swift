@@ -28,7 +28,7 @@ class DashboardController: BaseViewController {
             schedules = self.request(entity: "Schedules", sortBy: "occurance");
         }
         setUpScheduleCards(schedules: schedules)
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(DashboardController.update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(DashboardController.update), userInfo: nil, repeats: true)
     }
     
     //MARK: - Logging Drugs
@@ -78,35 +78,38 @@ class DashboardController: BaseViewController {
                 let new = DrugCard(frame: CGRect(x: 0, y: 0, width: currentStack.frame.width, height: 72))
                 new.drugName.text = schedule.medication!.name
                 new.drugTime.text = schedule.occurance!.toString()
+                let countdown = schedule.occurance!.timeIntervalSinceNow
+                new.countdownLabel.text = countdown.toShortString()
                 new.logButton.tag = index
                 new.logButton.addTarget(self, action: #selector(drugLogFunction(_:)), for: .touchUpInside)
-                
+                new.lateLabel.isHidden = true
+                new.logButton.isHidden = true
+                new.countdownLabel.isHidden = true
+                new.doneImage.isHidden = true
                 // MARK: Select stack and colour
                 let calendar = Calendar.current
-                let currentDate = calendar.date(byAdding: .minute, value: 10, to: Date())
+                let currentDate = calendar.date(byAdding: .minute, value: 10, to: Date())!
+                let lateDate = calendar.date(byAdding: .minute, value: -10, to: Date())!
                 let logs = schedule.logSet!.allObjects as! [Logs]
                 let currentLog = logs.filter { $0.due == schedule.occurance }
                 if (currentLog.count > 0) {
                     // Completed
-                    new.lateLabel.isHidden = true
-                    new.logButton.isHidden = true
+                    new.doneImage.isHidden = false
                     new.drugCard.backgroundColor = DesignColours.grey
                     completedStack.addArrangedSubview(new)
                 }
-                else if (schedule.occurance! < currentDate!) {
+                else if (currentDate >= schedule.occurance!) {
                     // Current
-                    if (schedule.occurance! < Date()) {
+                    new.logButton.isHidden = false
+                    if (lateDate >= schedule.occurance!) {
                         new.lateLabel.isHidden = false
-                    }
-                    else {
-                        new.lateLabel.isHidden = true
                     }
                     new.drugCard.backgroundColor = .white
                     currentStack.addArrangedSubview(new)
                 }
                 else {
                     // Upcoming
-                    new.lateLabel.isHidden = true
+                    new.countdownLabel.isHidden = false
                     new.drugCard.backgroundColor = .white
                     upcomingStack.addArrangedSubview(new)
                 }

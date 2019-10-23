@@ -167,6 +167,33 @@ extension Date {
         formatter.dateFormat = "h:mm a"
         return formatter.string(from: self)
     }
+    func toCountdown() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "m"
+        return formatter.string(from: self) + " min"
+    }
+}
+
+// MARK: - TimeInterval
+extension TimeInterval {
+    func toShortString() -> String {
+        let interval = Int(self)
+        if (interval / 60 > 1) {
+            return String(format: "%02d min", interval / 60 + 1)
+        }
+        else {
+            let hours = (Double(interval) / 3600.0).round(to: 1)
+            return String(format: "%02d hours", hours)
+        }
+    }
+}
+
+// MARK: - Doubl;e
+extension Double {
+    func round(to places: Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return Darwin.round(self * divisor) / divisor
+    }
 }
 
 // MARK: - NSManagedObject
