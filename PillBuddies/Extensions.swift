@@ -178,17 +178,18 @@ extension Date {
 extension TimeInterval {
     func toShortString() -> String {
         let interval = Int(self)
-        if (interval / 60 > 1) {
+        if (interval / 3600 < 1) {
             return String(format: "%02d min", interval / 60 + 1)
         }
         else {
-            let hours = (Double(interval) / 3600.0).round(to: 1)
-            return String(format: "%02d hours", hours)
+            let hours = (interval / 3600)
+            let minutes = (interval / 60) % 60
+            return String(format: "%d:%0.2d hours", hours, minutes)
         }
     }
 }
 
-// MARK: - Doubl;e
+// MARK: - Double
 extension Double {
     func round(to places: Int) -> Double {
         let divisor = pow(10.0, Double(places))

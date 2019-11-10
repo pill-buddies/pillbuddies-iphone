@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,9 +44,10 @@
 		EC6D0EFA232C1CE200EC4DDE /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */; };
 		EC6D0EFB232C1CE200EC4DDE /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EE8232C19D500EC4DDE /* Roboto-Thin.ttf */; };
 		EC6D0EFC232C1CE200EC4DDE /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC6D0EEA232C19D500EC4DDE /* Roboto-ThinItalic.ttf */; };
+		EC7F5A6A236E1E9700FBD990 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7F5A69236E1E9700FBD990 /* DesignSystem.framework */; };
+		EC7F5A6B236E1E9700FBD990 /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC7F5A69236E1E9700FBD990 /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC7F5A6C236E1E9D00FBD990 /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7F5A69236E1E9700FBD990 /* DesignSystem.framework */; };
 		EC8BB0A023301B6F00A46A76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */; };
-		EC9506B0234A5EFA00DEC97F /* DesignSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9506AF234A5EFA00DEC97F /* DesignSystem.framework */; };
-		EC9506B1234A5EFA00DEC97F /* DesignSystem.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC9506AF234A5EFA00DEC97F /* DesignSystem.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ECCFD55523316A36007A6A64 /* pill-v5.svg in Resources */ = {isa = PBXBuildFile; fileRef = ECCFD554233165CF007A6A64 /* pill-v5.svg */; };
 /* End PBXBuildFile section */
 
@@ -61,13 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EC9506B2234A5EFA00DEC97F /* Embed Frameworks */ = {
+		ECB01FE9236E1CF00061A304 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EC9506B1234A5EFA00DEC97F /* DesignSystem.framework in Embed Frameworks */,
+				EC7F5A6B236E1E9700FBD990 /* DesignSystem.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,10 +119,8 @@
 		EC6D0EED232C19D500EC4DDE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EC6D0EEE232C19D500EC4DDE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EC6D0EEF232C19D500EC4DDE /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
-		EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC76BBE9233EF73500CFD814 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7F5A69236E1E9700FBD990 /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8BB09F23301B6F00A46A76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		EC9506AF234A5EFA00DEC97F /* DesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCFD554233165CF007A6A64 /* pill-v5.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pill-v5.svg"; sourceTree = "<group>"; };
 		F53197B993DE2E230D426368 /* Pods-PillBuddiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillBuddiesTests.release.xcconfig"; path = "Target Support Files/Pods-PillBuddiesTests/Pods-PillBuddiesTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83C78960E2F0448C0344A061 /* Pods_PillBuddies.framework in Frameworks */,
-				EC9506B0234A5EFA00DEC97F /* DesignSystem.framework in Frameworks */,
+				EC7F5A6A236E1E9700FBD990 /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CFFC8857797EB067948457 /* Pods_PillBuddiesTests.framework in Frameworks */,
+				EC7F5A6C236E1E9D00FBD990 /* DesignSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +204,7 @@
 		9A495013475BD6475003BD44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EC76BBE9233EF73500CFD814 /* DesignSystem.framework */,
-				EC9506AF234A5EFA00DEC97F /* DesignSystem.framework */,
-				EC74C9A12339A7DF00C5CE79 /* DesignSystem.framework */,
+				EC7F5A69236E1E9700FBD990 /* DesignSystem.framework */,
 				4F496EF5E1BB785F4BF39D97 /* Pods_PillBuddies.framework */,
 				D69C136AA7AF612FF2DF5523 /* Pods_PillBuddiesTests.framework */,
 			);
@@ -270,7 +268,7 @@
 				2111437822DBE526000323BF /* Frameworks */,
 				2111437922DBE526000323BF /* Resources */,
 				FAEFA1F4E4FE4C3C1E1E1889 /* [CP] Embed Pods Frameworks */,
-				EC9506B2234A5EFA00DEC97F /* Embed Frameworks */,
+				ECB01FE9236E1CF00061A304 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -532,6 +530,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/williamnharvey/Library/Developer/Xcode/DerivedData/DesignSystem-flokcfpdrniacjbunkhuolyxuozi/Build/Products/Debug-iphoneos/DesignSystem.framework";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -593,6 +592,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/williamnharvey/Library/Developer/Xcode/DerivedData/DesignSystem-flokcfpdrniacjbunkhuolyxuozi/Build/Products/Debug-iphoneos/DesignSystem.framework";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
