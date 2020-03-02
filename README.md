@@ -13,3 +13,7 @@ Xcode iOS app with cocaopods dependencies
 `pod install`
 
 3. Open the **workspace** file `pillbuddies.xcworkspace` in Xcode
+
+# License
+
+No license is provided for use of this source
